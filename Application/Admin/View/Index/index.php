@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>博客系统管理面板</title>
+		<title>系统管理面板</title>
 		<script src="__PUBLIC__/js/jquery-3.1.1.min.js"></script>
 		<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css" />
 		<script src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
@@ -10,8 +10,8 @@
 		<?php include(THEME_PATH . "nav.php"); ?>
 		<div class="container">
 			<div class="jumbotron">
-			  <h1>博客系统管理面板</h1>
-			  <p>当前程序版本：<?php include("./v.php"); ?> </p>
+			  <h1>系统管理面板</h1>
+			  <p>当前程序版本：<?php include("./version.php"); ?> </p>
 			</div>
 			<div class="col-md-8">
 				<div class="panel panel-info">

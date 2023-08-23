@@ -46,10 +46,10 @@ class SubmitController extends Controller
         }
 
         $username = session('username');
-        //读取博客系统设置信息
+        //读取系统设置信息
         $setting = D("setting");
         $set = $this->set;
-        //读取博客数据库
+        //读取数据库
         $submitmodel = D("submit");
         $count = $submitmodel->count();
         $page = new \Think\Page($count, $set['adminpagenum']);
@@ -116,19 +116,19 @@ class SubmitController extends Controller
         $content = I("post.content");
         $class = I("post.class");
         $img = I("post.img");
-/*
-        //判断验证码
-        function check_verify($code, $id = '')
-        {
-            $verify = new \Think\Verify();
-            return $verify->check($code, $id);
-        }
+        /*
+                //判断验证码
+                function check_verify($code, $id = '')
+                {
+                    $verify = new \Think\Verify();
+                    return $verify->check($code, $id);
+                }
 
-        $code = I('post.code');
-        if (check_verify($code) == false) {
-            $this->error('验证码错误', "/User/Submit/submit?valtitle=" . $title . "&valcontent=" . $content . "&valclass=" . $class . "&valimg=" . $img);
-        }
-*/
+                $code = I('post.code');
+                if (check_verify($code) == false) {
+                    $this->error('验证码错误', "/User/Submit/submit?valtitle=" . $title . "&valcontent=" . $content . "&valclass=" . $class . "&valimg=" . $img);
+                }
+        */
         $submitmodel = D("submit");
         if (IS_POST) {
             $author = session('username');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>博客系统管理面板</title>
+		<title>系统管理面板</title>
 		<script src="__PUBLIC__/js/jquery-3.1.1.min.js"></script>
 		<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="__PUBLIC__/simditor/styles/simditor.css" />
@@ -15,7 +15,7 @@
 		<?php include(THEME_PATH . "nav.php"); ?>
 		<div class="container">
 			<div class="page-header">
-			  <h1>博客管理面板
+			  <h1>管理面板
 				  <small class="pull-right">
 					  <a href="<?php echo U("/Admin/Blog/index");?>" class="btn btn-success">返回</a>
 				  </small>

@@ -71,7 +71,7 @@
 			<div align=right>
 				<?php echo $show; ?>
 			</div>
-			<?php include("Public/foot/foot.php"); ?>
+			<?php include("Public/footer/footer.php"); ?>
 		</div>
 	</body>
 </html>

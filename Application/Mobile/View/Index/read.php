@@ -147,7 +147,7 @@ img{
         <div class="footer">
             <div class="footer-socials half-bottom">
             </div>
-            <p class="center-text"><?php include("Public/foot/foot.php"); ?></p>
+            <p class="center-text"><?php include("Public/footer/footer.php"); ?></p>
         </div>       
     </div>
 </div>

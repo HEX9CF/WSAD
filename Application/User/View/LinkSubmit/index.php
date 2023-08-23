@@ -70,7 +70,7 @@
 				  </div>
 				</form>
 			</div>
-			<?php include("Public/foot/foot.php"); ?>
+			<?php include("Public/footer/footer.php"); ?>
 		</div>
 	</body>
 </html>

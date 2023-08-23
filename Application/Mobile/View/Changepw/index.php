@@ -44,5 +44,5 @@
 			</div>
     </div>
 </div>
-<?php include("Public/foot/foot.php"); ?></p>
+<?php include("Public/footer/footer.php"); ?></p>
 </body>

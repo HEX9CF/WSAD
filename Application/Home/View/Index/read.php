@@ -156,7 +156,7 @@
 				  <div class="panel-footer" align=right>声明：用户在评论区发表的言论仅代表用户个人观点，并不代表本站立场。</div>
 				</div>
 			</div>
-			<?php include("Public/foot/foot.php"); ?>
+			<?php include("Public/footer/footer.php"); ?>
 		</div>
 
 		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

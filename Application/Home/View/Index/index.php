@@ -326,7 +326,7 @@
 				</br>
 			  </div>
 			</div>
-			<?php include("Public/foot/foot.php"); ?>
+			<?php include("Public/footer/footer.php"); ?>
 		</div>
 
 		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

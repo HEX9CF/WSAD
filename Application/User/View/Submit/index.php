@@ -71,11 +71,6 @@
 			<div align=right>
 				<?php echo $show; ?>
 			</div>
-			<div class="alert alert-warning" role="alert">
-			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-			  <span class="sr-only">警告:</span>
-			  如果你有关于游戏方面的文章，欢迎给本网站投稿，让更多的人了解这方面的知识。但本网站预先说明，投稿后本站不会支付稿费。
-			</div>
 			<?php include("Public/foot/foot.php"); ?>
 		</div>
 	</body>

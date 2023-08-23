@@ -1,57 +1,3 @@
-<!--
-               ...~hzhhhhhzzzzzzss====ssssszzz+             
-           .~<szz+<=ss==++<<<<(((~~((((-''''(=<+~           
-          <+=szhhs+~'...''''''''''''''        (sz<          
-        .=s(--'......'.'.---~~~--~~-'.-((.     -sz.         
-       z=(~'-''''..'-~(((~-....''''.'~(~'~~.    ~hh         
-      zz<   .'---~~~~--~~'.  .'.'''-~((~-~~-'    zz~        
-     hh~    .'-'---~-.      .--.''-~~~-~(~'~~.   .zh        
-    s=(   .~(-     .-.     .--'  .... .-(~~~.''   sh-       
-    h+    .~-.     .~'     .~'          .~~'''.   .z=       
-    h=    .'       .('      '    ...     .'.'.     +h'      
-   (h<              -.        -zDBBBBBB=.          'z=      
-  .hz.      .=BND(           sDh<-sBBBBBB(          <s+     
- .hh<''.'.  BBhDNNB=        sh=-''+BNBBBhB~ -~'   '-'zz(    
--hh=-~-.''  BBhDBNNBB=      Dz~.<s=BBBBDDBs.~<-  ~(~~<zz(   
-hz=-<~.      '~<sBBNNBs.   .DDshhh<  ...-~' ' .~+<~...'=z(  
-hz(~<'.           .sDB(     .=zs-  'sz(..   -zDh=+ss+. '+s< 
-hz'-~<=ss='   .     zs              (hh+~~(szDD+(~<zz=.  ss+
-h+...+hhzhDD<-'    (Ds               -hhhhhDh<  +'  zz( .-=z
-h<.'.  '~-zDDD+   .DD-                  .''.  .+D=  .zz.' +z
-z=.'.   +''(=-   'Dhz        <s- ....       '+szDD=  =z.'.~h
-ss'.'. 'B~      'BDz       .<=Dh- '...    .zhDz=sDD( sz.'.(h
-zs<.~. sBs      BBB~      -~~ ~z(.'''   ~DBBD<..BzD=~zs'..sz
-~=s'<. BBB   ~~ <D<=     <zzh-<D~    -sBDBDz.  ~DD~-(=(.'~sz
- hh~~ .BBBD  .'  '=zs(.'.-+++'(s-''=sshh=BB   'BB=  .~~''szz
- ~h+. ~BDDBB<      +zh(.      (((zhhhz~. hB.-zBBB    .'-<zs 
-  sz..<BBssBBB='    <+='  .(+zhDBz+(..  <BBDDDBB(     .+z=  
-  =z'.=Bh<<szzDhhhhh=zz=hDhzzzshDz~    sBNNz(sBz      +ss   
-  ~z-.=B==+-'hB=zzhDDhhzzDh=~.  ==+.-hBNBNB'.sD.     (hz    
-  ~h-.+BhDh-'hh'''(sz('.(ss     =sDNNNNNBsz.+D+     .sz~    
-  ~z~.(BBBNBhhB-..-=='''~=+   ~DNNNBBBh--Ds<BD.     +('     
-  ~z~ ~BBBBBBBNBDhBhhDzhBDBBNBBNBNNB+    BBhB.     .s(      
-  ~z~ -BBBBBBBBNBBBBNNBNNNNNNNNNBhh'     DBB'      ~s-    
-  ~z- .BBBBBNBBBBBBBBBNNNNNNND( .hz~    BBB'       +z     
-  ~z'  BDhDBBBBBBBBBBNNBhz+s-    ~hh  -BBB.       <h<    
-  ~z'  hBDs<DsszhzsBDD(  ~(=      =hssDBh.       <ss        
-  ~z.  -BB=-D+'<z-.-Ds   (=s      zBDBD(   .    <zh         
-  ~h    sBD(sh''h<..ss   '<+   .+DBBD+..--.-<(~+hs          
-  ~z     +BhBBDsNN==hzD=ssDBNBDhhDh(...'~+<~~+zss        
-  ~z       <BBBBBBDzDDhzzhNBBNBBs-...(=('(=<-<z=         
-  -z  .  ..     .'~(<<+<<~'.   .  ~<~-<=( -zz+              
-  -= .-  ~('      .......      .'~(<<-.-+s+<.               
-  -+ .-. .((~-'............''-((((~'-(((+z-                 
-  -+. '-.  ~<<~'..  .....'~~(((~~-'.-<zz=                   
-  '+  .-<(-''...  . ....'-~~~-'  .(ss<-                  
-  -s   .-~--''.''....'....      (=++-                    
-  -z<     .----'''''..      ''~<+s(                        
-   zs~                   ~sz=sss-                         
-   ~zh=              .(szhhz(~.                           
-    -s+==~'''''''-~<=s=s=z+                              
-      (hhhhzs=szzzzss+<s                                
-
-Powered by HowardZheng
--->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -356,7 +302,7 @@ Powered by HowardZheng
 					<br>
 					<br>
 					<b>系统版本： <?php include("./v.php"); ?> </b></br>
-					<b>© 2016-<?php echo date("Y",time()); ?> HowardZheng</b>
+					<b>© 2016-<?php echo date("Y",time()); ?> HEX9CF</b>
 					</div>
 				  </div>
 				</div>
@@ -420,7 +366,7 @@ Powered by HowardZheng
 			  </ul>
 			  </div>
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<a href="<?php echo U("/Home/Login/forgotpw");?>" class="btn btn-warning">忘记密码？</a>
+				<a href="<?php echo U("/User/Login/forgotpw");?>" class="btn btn-warning disabled">忘记密码？</a>
 				<button type="submit" class="btn btn-success">提交表单</button>
 			  </div>
 			  </form>

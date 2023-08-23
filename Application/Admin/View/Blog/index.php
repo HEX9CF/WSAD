@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<?php include(THEME_PATH . "nav.php"); ?>
+        <div class="container">
 			<div class="page-header">
 			  <h1>博客管理面板
 				  <small class="pull-right">
@@ -72,6 +73,7 @@
 			<div align=right>
 				<?php echo $show; ?>
 			</div>
+        </div>
 	</body>
 </html>
 

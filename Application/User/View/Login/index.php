@@ -14,7 +14,7 @@
 				<ul class="nav nav-tabs">
 					  <li role="presentation"><a href="<?php echo U("/User/Register/index"); ?>">注册</a></li>
 					  <li role="presentation" class="active"><a href="<?php echo U("/User/Login/index"); ?>">登录</a></li>
-					  <li role="presentation"><a href="<?php echo U("/Home/Login/forgotpw");?>">找回密码</a></li>
+					  <!--<li role="presentation"><a href="<?php echo U("/User/Login/forgotpw");?>">找回密码</a></li>-->
 				</ul>
 				  <div class="panel-body">
 					<form action="<?php echo U('/User/Login/index?act=chk');?>" method="post">
@@ -35,7 +35,7 @@
 					  </div>
 					  <div class="checkbox" align=right>
 						<label>
-						  <input type="checkbox" name='rem'> 记住我
+						  <input type="checkbox" name='rem' disabled> 记住我
 						</label>
 					  </div>
 					  <div style="float:left;">
@@ -45,7 +45,7 @@
 					  </div>
 					  <div style="float:right;">
 					  	<a href="<?php echo U("/Home/Index/index");?>" class="btn btn-danger">返回首页</a>
-						<a href="<?php echo U("/Home/Login/forgotpw");?>" class="btn btn-warning">忘记密码？</a>
+						<a href="<?php echo U("/User/Login/forgotpw");?>" class="btn btn-warning disabled">忘记密码？</a>
 						<button type="submit" class="btn btn-success">提交表单</button>
 					  </div>
 					</form>

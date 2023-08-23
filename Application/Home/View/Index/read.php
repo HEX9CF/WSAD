@@ -196,7 +196,7 @@
 			  </ul>
 			  </div>
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<a href="<?php echo U("/Home/Login/forgotpw");?>" class="btn btn-warning">忘记密码？</a>
+				<a href="<?php echo U("/User/Login/forgotpw");?>" class="btn btn-warning disabled">忘记密码？</a>
 				<button type="submit" class="btn btn-success">提交表单</button>
 			  </div>
 			  </form>

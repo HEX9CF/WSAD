@@ -46,7 +46,7 @@
 						<a href="<?php echo U('/Mobile/Register/index');?>" class="button button-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注册账号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 					</div>
 					<div style="float:right;">
-						<a href="<?php echo U('/Mobile/Login/forgotpw');?>" class="button button-yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="<?php echo U('/Mobile/Login/forgotpw');?>" class="button button-yellow disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 					</div>
 					<div class="clear"></div>
 				</form>

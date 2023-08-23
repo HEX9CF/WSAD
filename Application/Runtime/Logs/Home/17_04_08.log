@@ -1,0 +1,319 @@
+[ 2017-04-08T06:40:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `num` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `link_exch` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `page`  [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='45' WHERE `key` = 'page' [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='9' WHERE `key` = 'msg' [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='10' WHERE `key` = 'user' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `submit` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `submit` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='0' WHERE `key` = 'submit' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: zancount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 91 行.
+SQL: UPDATE `num` SET `val`='360' WHERE `key` = 'zan' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: readcount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 101 行.
+SQL: UPDATE `num` SET `val`='2228' WHERE `key` = 'read' [ RunTime:0.0030s ]
+SQL: SELECT * FROM `num` WHERE `key` = 'vst' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `num`  [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='35938' WHERE `key` = 'vst' [ RunTime:0.0030s ]
+SQL: SELECT * FROM `page` ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `top` = 'true' ORDER BY pid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` ORDER BY mid desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `page` WHERE `img` <> '' ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `link_exch` ORDER BY lid desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `page` ORDER BY `read` desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY zan desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY msg desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+NOTIC: [2] include(Public/foot/foot.php): failed to open stream: No such file or directory C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+NOTIC: [2] include(): Failed opening 'Public/foot/foot.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-08T06:41:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `num` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `link_exch` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `page`  [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='45' WHERE `key` = 'page' [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='9' WHERE `key` = 'msg' [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='10' WHERE `key` = 'user' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `submit` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `submit` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='0' WHERE `key` = 'submit' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: zancount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 91 行.
+SQL: UPDATE `num` SET `val`='360' WHERE `key` = 'zan' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: readcount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 101 行.
+SQL: UPDATE `num` SET `val`='2228' WHERE `key` = 'read' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `num` WHERE `key` = 'vst' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `num`  [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='35939' WHERE `key` = 'vst' [ RunTime:0.0030s ]
+SQL: SELECT * FROM `page` ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `top` = 'true' ORDER BY pid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` ORDER BY mid desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `img` <> '' ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `link_exch` ORDER BY lid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY `read` desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY zan desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY msg desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+NOTIC: [2] include(Public/foot/foot.php): failed to open stream: No such file or directory C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+NOTIC: [2] include(): Failed opening 'Public/foot/foot.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:41:07+08:00 ] 127.0.0.1 /index.php/Home/Index/read.html?pid=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` WHERE `pid` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `page` SET `msg`='0' WHERE `pid` = 48 [ RunTime:0.0040s ]
+SQL: SELECT * FROM `page` WHERE `pid` = 48 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` WHERE `pid` = 48 ORDER BY mid desc  [ RunTime:0.0010s ]
+SQL: UPDATE `page` SET `read`='207' WHERE `pid` = 48 [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+NOTIC: [2] include(Public/foot/foot.php): failed to open stream: No such file or directory C:\www\tpblog\Application\Runtime\Cache\Home\d710e184b89d8fc6f49ea94e0976c20c.php 第 136 行.
+NOTIC: [2] include(): Failed opening 'Public/foot/foot.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\www\tpblog\Application\Runtime\Cache\Home\d710e184b89d8fc6f49ea94e0976c20c.php 第 136 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:41:07+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:04:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `num` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `link_exch` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page`  [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='45' WHERE `key` = 'page' [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='9' WHERE `key` = 'msg' [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='10' WHERE `key` = 'user' [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `submit` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `submit` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='0' WHERE `key` = 'submit' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: zancount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 91 行.
+SQL: UPDATE `num` SET `val`='360' WHERE `key` = 'zan' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: readcount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 101 行.
+SQL: UPDATE `num` SET `val`='2229' WHERE `key` = 'read' [ RunTime:0.0030s ]
+SQL: SELECT * FROM `num` WHERE `key` = 'vst' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `num`  [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='35940' WHERE `key` = 'vst' [ RunTime:0.0040s ]
+SQL: SELECT * FROM `page` ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `top` = 'true' ORDER BY pid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` ORDER BY mid desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `img` <> '' ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `link_exch` ORDER BY lid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY `read` desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY zan desc LIMIT 5   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `page` ORDER BY msg desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+NOTIC: [2] include(Public/foot/foot.php): failed to open stream: No such file or directory C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+NOTIC: [2] include(): Failed opening 'Public/foot/foot.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-08T07:36:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `num` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `link_exch` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `page`  [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `num` SET `val`='45' WHERE `key` = 'page' [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='9' WHERE `key` = 'msg' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='10' WHERE `key` = 'user' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `submit` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `submit` LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='0' WHERE `key` = 'submit' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: zancount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 91 行.
+SQL: UPDATE `num` SET `val`='360' WHERE `key` = 'zan' [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: readcount C:\www\tpblog\Application\Home\Controller\IndexController.class.php 第 101 行.
+SQL: UPDATE `num` SET `val`='2229' WHERE `key` = 'read' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `num` WHERE `key` = 'vst' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `num`  [ RunTime:0.0010s ]
+SQL: UPDATE `num` SET `val`='35941' WHERE `key` = 'vst' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `page` ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` WHERE `top` = 'true' ORDER BY pid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` ORDER BY mid desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `page` WHERE `img` <> '' ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `link_exch` ORDER BY lid desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY `read` desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY zan desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `page` ORDER BY msg desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+NOTIC: [2] include(Public/foot/foot.php): failed to open stream: No such file or directory C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+NOTIC: [2] include(): Failed opening 'Public/foot/foot.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\www\tpblog\Application\Runtime\Cache\Home\74c9bdbded7009a43a281be8a565b911.php 第 325 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

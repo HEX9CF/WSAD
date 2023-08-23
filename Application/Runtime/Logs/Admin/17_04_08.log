@@ -1,0 +1,1006 @@
+[ 2017-04-08T06:46:28+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:29+08:00 ] 127.0.0.1 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:29+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:41+08:00 ] 127.0.0.1 /index.php/Admin/Login/index/act/chk.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting` WHERE `key` = 'md5key' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin` = '121212' AND `adminpw` = '53bfe780babc4f6aa8be57ef35564fcb' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:42+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `num` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: submitinsert C:\www\tpblog\Application\Admin\Controller\IndexController.class.php 第 7 行.
+SQL: SELECT * FROM `num` WHERE `key` = 'vst' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `num`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Msg/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `msg` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `msg` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `msg` ORDER BY mid desc LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:44+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `page` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `page` ORDER BY pid desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `classes` WHERE `name` = '教程攻略'  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `classes`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:46:57+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:46:58+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:48:09+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:48:10+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:49:03+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:49:04+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:49:26+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:49:27+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:49:55+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:49:56+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:50:06+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Call to undefined method Think\Upload::getUploadFileInfo()
+
+[ 2017-04-08T06:50:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:51:04+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:51:08+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:51:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:51:37+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:52:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:52:42+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:53:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:53:20+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:53:47+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:53:48+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:58:14+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T06:58:16+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: Class 'Admin\Controller\Image' not found
+
+[ 2017-04-08T06:58:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T06:59:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: syntax error, unexpected '='
+
+[ 2017-04-08T06:59:22+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:00:00+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: syntax error, unexpected '='
+
+[ 2017-04-08T07:00:01+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:00:01+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:00:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: syntax error, unexpected '='
+
+[ 2017-04-08T07:00:43+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:00:43+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:02:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:02:09+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:02:09+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:02:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `classes`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:02:30+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:02:31+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:02:31+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:02:31+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:03:33+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `classes` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `classes`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:03:37+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-04-08T07:03:38+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:03:38+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:03:38+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:03:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-04-08T07:03:52+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:03:52+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:03:52+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:05:23+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:05:24+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:05:24+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:05:25+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:05:35+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:05:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:05:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:05:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:09:03+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:09:04+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:09:04+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:09:05+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:09:14+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:09:18+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:09:18+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:09:25+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:09:27+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:12:16+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:12:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:12:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:12:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:12:18+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:13:38+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:13:39+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:13:39+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:13:39+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:14:40+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:14:40+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:14:40+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:14:54+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 不存在的图像文件
+
+[ 2017-04-08T07:15:53+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:15:53+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:15:55+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-04-08T07:15:55+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dab567bb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:15:55+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dab567bb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:16:19+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-04-08T07:16:19+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dc31ac19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:16:19+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dc31ac19.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:16:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-04-08T07:16:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dc5a305c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:16:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81dc5a305c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:18:20+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: syntax error, unexpected '$image' (T_VARIABLE)
+
+[ 2017-04-08T07:18:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:18:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:18:29+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: syntax error, unexpected '$image' (T_VARIABLE)
+
+[ 2017-04-08T07:18:30+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:18:30+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:18:53+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: syntax error, unexpected '$image' (T_VARIABLE)
+
+[ 2017-04-08T07:18:54+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:18:54+08:00 ] 127.0.0.1 /index.php/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T07:19:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+
+[ 2017-04-08T07:19:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e74ed7df.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:19:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e74ed7df.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:19:27+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+
+[ 2017-04-08T07:19:27+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e7f0e3e7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-08T07:19:27+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e7f0e3e7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:19:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `aid` = 30 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y C:\www\tpblog\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+
+[ 2017-04-08T07:19:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e95d6c21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T07:19:50+08:00 ] 127.0.0.1 /index.php/Admin/Blog/Uploads/2017-04-08/58e81e95d6c21.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

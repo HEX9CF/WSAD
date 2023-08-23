@@ -218,17 +218,19 @@ class IndexController extends Controller {
 	public function msg(){
 		$pid = I("get.pid");
 		$msg = strip_tags(I("post.msg"));
-		
-		//判断验证码
-		function check_verify($code, $id = ''){
-			$verify = new \Think\Verify();
-			return $verify->check($code, $id);
-		}
-		$code= I('post.code');
-		 if(check_verify($code) == false){
-		$this->error('验证码错误',"/Home/Index/read?pid=" . $pid .  "&valmsg=" . $msg);
-		}
+/*
+        //判断验证码
+        function check_verify($code, $id = '')
+        {
+            $verify = new \Think\Verify();
+            return $verify->check($code, $id);
+        }
 
+        $code = I('post.code');
+        if (check_verify($code) == false) {
+            $this->error('验证码错误', "/Home/Index/read?pid=" . $pid . "&valmsg=" . $msg);
+        }
+*/
 		$msgmodel = D("msg");
 		$nummodel = D("num");
 		$pagemodel = D("page");

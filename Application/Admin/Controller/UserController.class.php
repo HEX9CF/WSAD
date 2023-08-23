@@ -94,18 +94,8 @@ class UserController extends AdminController {
 			);
 		}else{
 			//md5加密
-			$settingmodel = D('setting');
-			$settingwhere = array(
-				'key' => 'md5key',
-			);
-			$setting = $settingmodel->where( $settingwhere )->find();
-			$x = 0;
-			$key = $setting['val'];
-			while( $x <= $key ) {
-			  $userpw = md5($userpw);
-			  $x++;
-			}
-			//加密完成
+            $userpw = md5($userpw);
+
 			$insert = array(
 			'username' => $username,
 			'userpw' => $userpw,
@@ -154,18 +144,7 @@ class UserController extends AdminController {
 			}
 
 			//md5加密
-			$settingmodel = D('setting');
-			$settingwhere = array(
-				'key' => 'md5key',
-			);
-			$setting = $settingmodel->where( $settingwhere )->find();
-			$x = 0;
-			$key = $setting['val'];
-			while( $x <= $key ) {
-			  $userpw = md5($userpw);
-			  $x++;
-			}
-			//加密完成
+            $userpw = md5($userpw);
 
 			//插入数据
 			$insert = array(

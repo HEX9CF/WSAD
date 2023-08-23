@@ -1,131 +1,131 @@
 <?php
+
 namespace User\Controller;
+
 use Think\Controller;
-class RegisterController extends Controller {
-	function __construct(){
-		parent::__construct();
-		$this->setting = D("Admin/Setting");
-		$this->set = $this->setting->getall();
-	}
+
+class RegisterController extends Controller
+{
+    function __construct()
+    {
+        parent::__construct();
+        $this->setting = D("Admin/Setting");
+        $this->set = $this->setting->getall();
+    }
 
 
-	//生成验证码
-	function verify(){  
-			$Verify = new \Think\Verify();  
-			$Verify->fontSize = 25;  
-			$Verify->length   = 4;  
-			$Verify->useNoise = true;  
-			//$Verify->codeSet = '';  
-			$Verify->imageW = 200;  
-			$Verify->imageH = 50;  
-			$Verify->expire = 600;  
-			$Verify->useCurve = true;
-			$Verify->useImgBg = true;
-			$Verify->entry(); 
-	} 
+    //生成验证码
+    function verify()
+    {
+        $Verify = new \Think\Verify();
+        $Verify->fontSize = 25;
+        $Verify->length = 4;
+        $Verify->useNoise = true;
+        //$Verify->codeSet = '';
+        $Verify->imageW = 200;
+        $Verify->imageH = 50;
+        $Verify->expire = 600;
+        $Verify->useCurve = true;
+        $Verify->useImgBg = true;
+        $Verify->entry();
+    }
 
-	public function index(){
-		function get_device_type(){
-			$agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-			$type = 'other';
-			if(strpos($agent, 'iphone') || strpos($agent, 'ipad')){
-				$type = 'ios'; 
-			} 
-			if(strpos($agent, 'android')){
-				$type = 'android'; 
-			}
-			return $type; 
-		}
-		
-		if(get_device_type()=='ios'){
-			$this->redirect("Mobile/Register/index");
-		} 
-		if(get_device_type()=='android'){
-			$this->redirect("Mobile/Register/index");
-		}
+    public function index()
+    {
+        function get_device_type()
+        {
+            $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+            $type = 'other';
+            if (strpos($agent, 'iphone') || strpos($agent, 'ipad')) {
+                $type = 'ios';
+            }
+            if (strpos($agent, 'android')) {
+                $type = 'android';
+            }
+            return $type;
+        }
 
-		$act = I("get.act");
-		$valuser = I("get.valuser");
-		$valemail = I("get.valemail");
-		$valpw = I("get.valpw");
-		$valpw2 = I("get.valpw2");
+        if (get_device_type() == 'ios') {
+            $this->redirect("Mobile/Register/index");
+        }
+        if (get_device_type() == 'android') {
+            $this->redirect("Mobile/Register/index");
+        }
 
-		if( $act == 'chk' ){
-			$username = I("post.username");//mb_substr(,0,16);
-			$email = I("post.email");
-			$userpw = I("post.userpw");
-			$userpw2 = I("post.userpw2");
-			//判断验证码
-			function check_verify($code, $id = ''){
-				$verify = new \Think\Verify();
-				return $verify->check($code, $id);
-			}
-			$code = I('post.code');
-			 if(check_verify($code) == false){
-			$this->error('验证码错误',"/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+        $act = I("get.act");
+        $valuser = I("get.valuser");
+        $valemail = I("get.valemail");
+        $valpw = I("get.valpw");
+        $valpw2 = I("get.valpw2");
 
-			$regmodel = D('reg');
-			$usermodel = D('user');
+        if ($act == 'chk') {
+            $username = I("post.username");//mb_substr(,0,16);
+            $email = I("post.email");
+            $userpw = I("post.userpw");
+            $userpw2 = I("post.userpw2");
+/*
+            //判断验证码
+            function check_verify($code, $id = '')
+            {
+                $verify = new \Think\Verify();
+                return $verify->check($code, $id);
+            }
 
-			if( session('reg') ){
-				return $this->error("请勿重复提交申请","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+            $code = I('post.code');
+            if (check_verify($code) == false) {
+                $this->error('验证码错误', "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
+*/
+            $regmodel = D('reg');
+            $usermodel = D('user');
 
-			if( !$username ){
-				return $this->error("用户名不能为空,请重新输入","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+            if (session('reg')) {
+                return $this->error("请勿重复提交申请", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-			if( !$email ){
-				return $this->error("电子邮箱不能为空,请重新输入","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+            if (!$username) {
+                return $this->error("用户名不能为空,请重新输入", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-			if( !$userpw ){
-				return $this->error("密码不能为空,请重新输入","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+            if (!$email) {
+                return $this->error("电子邮箱不能为空,请重新输入", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-			if($userpw !== $userpw2 ){
-				return $this->error("新密码与确认密码(再输入一遍密码)不匹配,请重新输入","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2);
-			}
+            if (!$userpw) {
+                return $this->error("密码不能为空,请重新输入", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-			//判断用户名是否重复
-			$where = array();
-			$where['username'] = $username;
-			$isArr = $usermodel->where( $where )->find();
-			if( $isArr ){
-				return $this->error( "用户名已经存在","/User/Register/index?valuser=".$username."&valemail=".$email."&valpw=".$userpw."&valpw2=".$userpw2 );
-			}
+            if ($userpw !== $userpw2) {
+                return $this->error("新密码与确认密码(再输入一遍密码)不匹配,请重新输入", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-			//md5加密
-			$settingmodel = D('setting');
-			$settingwhere = array(
-				'key' => 'md5key',
-			);
-			$setting = $settingmodel->where( $settingwhere )->find();
-			$x = 0;
-			$key = $setting['val'];
-			while( $x <= $key ) {
-			  $userpw = md5($userpw);
-			  $userpw2 = md5($userpw2);
-			  $x++;
-			}
-			//加密完成
+            //判断用户名是否重复
+            $where = array();
+            $where['username'] = $username;
+            $isArr = $usermodel->where($where)->find();
+            if ($isArr) {
+                return $this->error("用户名已经存在", "/User/Register/index?valuser=" . $username . "&valemail=" . $email . "&valpw=" . $userpw . "&valpw2=" . $userpw2);
+            }
 
-				$insert = array(
-					'username' => $username,
-					'email' => $email,
-					'userpw' => $userpw,
-					'time' => time(),
-				);
-				$rid = $regmodel->add( $insert );
-				session('reg','true');
-				return $this->success("成功提交申请,请耐心等待管理员审核，审核成功后即可进行登录操作","/Home/index/index");
-		}
-		$this->assign("valuser",$valuser);
-		$this->assign("valemail",$valemail);
-		$this->assign("valpw",$valpw);
-		$this->assign("valpw2",$valpw2);
-		$this->display();
+            //md5加密
+            $userpw = md5($userpw);
+            $userpw2 = md5($userpw2);
+
+            $insert = array(
+                'username' => $username,
+                'email' => $email,
+                'userpw' => $userpw,
+                'time' => time(),
+            );
+            $rid = $regmodel->add($insert);
+            session('reg', 'true');
+            return $this->success("成功提交申请,请耐心等待管理员审核，审核成功后即可进行登录操作", "/Home/index/index");
+        }
+        $this->assign("valuser", $valuser);
+        $this->assign("valemail", $valemail);
+        $this->assign("valpw", $valpw);
+        $this->assign("valpw2", $valpw2);
+        $this->display();
 
     }
 }

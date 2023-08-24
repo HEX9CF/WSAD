@@ -34,7 +34,7 @@
 					  <div align=middle><img src="<?php echo $blog['img']; ?>" alt="<?php echo $blog['img']; ?>" class="img-rounded" style='width: 500px; height: 300px;' ></br><h1><b><?php echo $blog['title'];?></b></h1></div>
 					  <div align=middle>
 					    <p>
-							<span class="label label-info"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;作者/投稿人：<?php echo $blog['author']; ?></span>&nbsp;&nbsp;
+							<span class="label label-info"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;作者：<?php echo $blog['author']; ?></span>&nbsp;&nbsp;
 						</p>
 						<p>
 						  <span class="label label-info"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp;创建时间：<?php echo date("Y-m-d H:i:s",$blog['intime']); ?></span>&nbsp;&nbsp;
